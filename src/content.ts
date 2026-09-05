@@ -68,12 +68,15 @@ export type Thought = {
 
 export const thoughts: Thought[] = [
   {
-    slug: "a-short-essay-title",
-    title: "PLACEHOLDER — a short essay title",
-    date: "2026",
+    slug: "hola-soy-alan",
+    title: "Hola, soy Alan.",
+    date: "Sep 5, 2026",
     body: [
-      "PLACEHOLDER paragraph one of the article. Replace with the real essay text.",
-      "PLACEHOLDER paragraph two of the article.",
+      "Creo que la arquitectura no tiene límites disciplinares. Que diseñar un edificio, una empresa, o cómo una máquina recuerda es el mismo acto.",
+      "Creo que Maslow se olvidó de algo. En la base de la pirámide falta un ladrillo: la comunicación. Sin ella, el humano simplemente muere. No metafóricamente. Literalmente.",
+      "Creo en equivocarse. En corregir. En intentarlo hasta lograrlo — sin importar cuántas veces haya que volver a empezar.",
+      "Soy padre de tres, arquitecto de formación, fundador por convicción. Construyo Geometrical — infraestructura de memoria para la era agente.",
+      "Mi razón es simple: mejorar el viaje de quienes quiero, y el de tantos otros, mientras mejoro el mío en el proceso.",
     ],
   },
   {

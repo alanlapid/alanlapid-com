@@ -6,7 +6,7 @@ export default function HomeAvatar() {
     <Link
       href="/"
       title="Back to home"
-      className="fixed top-6 left-6 md:left-10 z-20 flex items-center justify-center w-10 h-10 rounded-full bg-neutral-900 text-white text-xs font-medium hover:opacity-80 transition-opacity"
+      className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-neutral-900 text-white text-[11px] font-medium hover:opacity-80 transition-opacity"
     >
       {profile.initials}
     </Link>

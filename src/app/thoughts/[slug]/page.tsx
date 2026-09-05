@@ -12,17 +12,19 @@ export default async function ThoughtPage(props: PageProps<"/thoughts/[slug]">) 
   if (!thought) notFound();
 
   return (
-    <>
+    <main className="max-w-2xl mx-auto px-6 py-16">
       <HomeAvatar />
-      <main className="max-w-2xl mx-auto px-6 py-24">
-        <p className="text-sm text-neutral-500">{thought.date}</p>
-        <h1 className="mt-2 text-2xl font-medium leading-snug">{thought.title}</h1>
-        <div className="mt-6 space-y-4 text-neutral-600 leading-relaxed">
-          {thought.body.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
-        </div>
-      </main>
-    </>
+      <h1 className="mt-8 text-3xl font-extrabold leading-tight text-neutral-900">
+        {thought.title}
+      </h1>
+      <p className="mt-2 text-neutral-500">Last updated: {thought.date}</p>
+      <div className="mt-10 space-y-8">
+        {thought.body.map((paragraph, index) => (
+          <p key={index} className="text-2xl font-light leading-[38px] text-neutral-900">
+            {paragraph}
+          </p>
+        ))}
+      </div>
+    </main>
   );
 }
